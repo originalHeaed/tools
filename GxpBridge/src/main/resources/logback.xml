@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration debug="true" scan="false">
+
+    <contextName>logback</contextName>
+    <!-- 生成的日志文件名 -->
+    <property name="app.name" value="bridge"/>
+    <!-- com.hundsun 包下日志的最低打印级别 -->
+    <property name="log.level" value="DEBUG"/>
+    <!-- 每个日志文件最大大小 -->
+    <property name="log.maxSize" value="100MB"/>
+    <!-- 日志文件最大保留天数 -->
+    <property name="log.keepDay" value="365"/>
+    <!-- 总文件最大大小 -->
+    <property name="log.totalSize" value="30GB"/>
+    <!--ConsoleAppender 用于在屏幕上输出日志-->
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <!--定义了一个过滤器,在LEVEL之下的日志输出不会被打印出来-->
+        <!--这里定义了 DEBUG，也就是控制台不会输出比 DEBUG 级别小的日志-->
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>TRANCE</level>
+        </filter>
+        <!-- encoder 默认配置为PatternLayoutEncoder -->
+        <!--定义控制台输出格式-->
+        <encoder>
+            <pattern>%d [%thread] %-5level %logger{36} [%file : %line] - %msg%n</pattern>
+            <charset>UTF-8</charset>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--定义日志输出的路径-->
+        <!--这里的scheduler.manager.server.home 没有在上面的配置中设定，所以会使用java启动时配置的值-->
+        <!--比如通过 java -Dscheduler.manager.server.home=/path/to XXXX 配置该属性-->
+        <file>logs/${app.name}.log</file>
+        <!--定义日志滚动的策略-->
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <!--定义文件滚动时的文件名的格式 %i 标识索引-->
+            <fileNamePattern>logs/${app.name}.%d{yyyy-MM-dd}-%i.log</fileNamePattern>
+            <!-- 180 days to keep -->
+            <maxHistory>${log.keepDay}</maxHistory>
+            <maxFileSize>${log.maxSize}</maxFileSize>
+            <!-- total size of all archive files, if total size > 30GB, it will delete old archived file-->
+            <totalSizeCap>${log.totalSize}</totalSizeCap>
+        </rollingPolicy>
+        <!--定义输出格式-->
+        <encoder>
+            <pattern>%d %-5level %logger{36} [%file : %line] - %msg%n</pattern>
+            <charset>UTF-8</charset> <!-- 此处设置字符集 -->
+        </encoder>
+    </appender>
+
+    <!--root是默认的logger 这里设定输出级别是 trace-->
+    <root level="${log.level}">
+        <!--定义了两个appender，日志会通过往这两个appender里面写-->
+        <appender-ref ref="file"/>
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>

@@ -1,0 +1,3 @@
+2022-08-30 22:27:36,234 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 29] - 开始启动 Java 桥接器
+2022-08-30 22:27:36,238 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-30 22:27:36,274 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 68] - 配置文件为空，启动时请使用 -DFilePath 指定配置文件路径

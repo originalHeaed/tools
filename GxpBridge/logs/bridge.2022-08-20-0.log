@@ -1,0 +1,15 @@
+2022-08-20 13:42:58,545 ERROR BridgeMain [BridgeMain.java : 31] - 坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑坑
+2022-08-20 14:27:36,730 DEBUG BridgeMain [BridgeMain.java : 27] - 开始启动 Java 桥接器
+2022-08-20 14:27:36,735 DEBUG BridgeMain [BridgeMain.java : 29] - 加载并校验配置文件
+2022-08-20 14:27:36,741 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 47] - 配置文件为空，启动时请使用 -DFilePath 指定配置文件路径
+2022-08-20 14:28:16,373 DEBUG BridgeMain [BridgeMain.java : 27] - 开始启动 Java 桥接器
+2022-08-20 14:28:16,375 DEBUG BridgeMain [BridgeMain.java : 29] - 加载并校验配置文件...
+2022-08-20 14:28:16,378 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 47] - 配置文件为空，启动时请使用 -DFilePath 指定配置文件路径
+2022-08-20 14:29:54,905 DEBUG BridgeMain [BridgeMain.java : 27] - 开始启动 Java 桥接器
+2022-08-20 14:29:54,907 DEBUG BridgeMain [BridgeMain.java : 29] - 加载并校验配置文件...
+2022-08-20 14:29:54,909 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 47] - 配置文件为空，启动时请使用 -DFilePath 指定配置文件路径
+2022-08-20 14:31:23,801 DEBUG BridgeMain [BridgeMain.java : 27] - 开始启动 Java 桥接器
+2022-08-20 14:31:23,803 DEBUG BridgeMain [BridgeMain.java : 29] - 加载并校验配置文件...
+2022-08-20 14:31:23,808 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 98] - 键为 listenPort 的键值对不存在于路径为 E:\project\ningbo\GxpBridge\src\main\resources\application.properties 的配置文件中，请添加后在启动
+2022-08-20 14:31:59,427 DEBUG BridgeMain [BridgeMain.java : 27] - 开始启动 Java 桥接器
+2022-08-20 14:31:59,429 DEBUG BridgeMain [BridgeMain.java : 29] - 加载并校验配置文件...

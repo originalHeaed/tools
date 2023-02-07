@@ -1,0 +1,239 @@
+2022-08-26 09:52:51,133 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-26 09:52:51,149 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-26 09:52:51,227 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-26 09:53:13,213 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55435
+2022-08-26 09:53:13,213 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=55435,localport=8080]
+2022-08-26 09:53:13,213 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:13,213 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 124] - gxp socket 传递数据中第一个字符非 {
+2022-08-26 09:53:13,213 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 128] - 阻塞并读取 gxp socket 传递的第一个字符失败第一个字符失败
+2022-08-26 09:53:13,213 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 87] - 处理 gxp socket请求异常，socket 异常断开
+2022-08-26 09:53:13,213 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 88] - java.lang.RuntimeException: gxp socket 传递数据中第一个字符非 {
+	at com.hundsun.socket.DealSocket.blockAndReadFirst(DealSocket.java:125)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:75)
+
+2022-08-26 09:53:13,213 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 109] - 关闭 socket 成功
+2022-08-26 09:53:33,032 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55449
+2022-08-26 09:53:33,032 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-2,socke 为Socket[addr=/127.0.0.1,port=55449,localport=8080]
+2022-08-26 09:53:33,032 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:33,032 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:33,032 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:33,054 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:33,054 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:33,147 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 183] - 开始初始化 https 发送对象
+2022-08-26 09:53:33,226 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-26 09:53:33,569 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-26 09:53:33,640 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-26 09:53:33,885 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-26 09:53:33,885 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 210] - 成功初始化 https 发送对象
+2022-08-26 09:53:34,072 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:34,088 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:34,088 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:34,103 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:34,103 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:34,103 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:34,103 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:34,119 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:34,119 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:34,119 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:35,112 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:35,112 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:35,112 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:35,112 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:35,128 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:35,128 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:35,128 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:36,122 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:36,122 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:36,122 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:36,122 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:36,140 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:36,141 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:36,141 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:37,134 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:37,134 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:37,134 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:37,134 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:37,134 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:37,134 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:37,149 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:38,139 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:38,139 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:38,139 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:38,139 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:38,155 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:38,155 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:38,155 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:39,142 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:39,142 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:39,142 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:39,142 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:39,158 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:39,158 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:39,158 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:40,158 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:40,158 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:40,158 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:40,158 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:40,173 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:40,173 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:40,173 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:41,167 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:41,167 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:41,167 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:41,167 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:41,182 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:41,182 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:41,182 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 09:53:42,177 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 09:53:42,177 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:42,177 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 09:53:42,177 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：anama{nj{}ds}kjskdj{}sdksd}
+2022-08-26 09:53:42,193 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 63] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-26 09:53:42,193 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"qw12121212"}写回socket
+2022-08-26 09:53:42,193 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:29:17,213 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-26 17:29:17,220 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-26 17:29:17,269 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-26 17:30:09,000 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:60971
+2022-08-26 17:30:09,044 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=60971,localport=8080]
+2022-08-26 17:30:09,044 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:30:09,045 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:30:27,812 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:35:34,077 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64700
+2022-08-26 17:35:34,077 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:35:34,079 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-2,socke 为Socket[addr=/127.0.0.1,port=64700,localport=8080]
+2022-08-26 17:35:34,080 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:35:34,080 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:35:34,080 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:35:34,081 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:35:34,086 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:35:34,086 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:35:34,121 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 83] - 向url为https://www.comeonw.com/wang发送 json 请求失败
+2022-08-26 17:35:34,121 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 83] - 向url为https://www.comeonw.com/wang发送 json 请求失败
+2022-08-26 17:35:34,123 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 84] - java.lang.NullPointerException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
+	at okhttp3.Request$Builder.addHeader(Request.kt)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:55)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:166)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:80)
+
+2022-08-26 17:35:34,123 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 84] - java.lang.NullPointerException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
+	at okhttp3.Request$Builder.addHeader(Request.kt)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:55)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:166)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:80)
+
+2022-08-26 17:35:34,133 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value"}写回socket
+2022-08-26 17:35:34,133 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value"}写回socket
+2022-08-26 17:35:34,133 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 192] - 将数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value"}返回给 gxp 失败
+2022-08-26 17:35:34,143 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:35:34,143 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 87] - 处理 gxp socket请求异常，socket 异常断开
+2022-08-26 17:35:34,144 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 88] - java.lang.RuntimeException: 将数据{}返回给 gxp 失败
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:193)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:83)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at sun.nio.cs.StreamEncoder.writeBytes(StreamEncoder.java:221)
+	at sun.nio.cs.StreamEncoder.implFlushBuffer(StreamEncoder.java:291)
+	at sun.nio.cs.StreamEncoder.implFlush(StreamEncoder.java:295)
+	at sun.nio.cs.StreamEncoder.flush(StreamEncoder.java:141)
+	at java.io.OutputStreamWriter.flush(OutputStreamWriter.java:229)
+	at java.io.BufferedWriter.flush(BufferedWriter.java:254)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:190)
+	... 1 more
+
+2022-08-26 17:35:34,144 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 109] - 关闭 socket 成功
+2022-08-26 17:35:49,700 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64708
+2022-08-26 17:35:49,700 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=64708,localport=8080]
+2022-08-26 17:35:49,700 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:35:49,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:35:49,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:35:49,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:35:49,701 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:35:49,701 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 83] - 向url为https://www.comeonw.com/wang发送 json 请求失败
+2022-08-26 17:35:49,701 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 84] - java.lang.NullPointerException: Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value
+	at okhttp3.Request$Builder.addHeader(Request.kt)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:55)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:166)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:80)
+
+2022-08-26 17:35:49,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：Parameter specified as non-null is null: method okhttp3.Request$Builder.addHeader, parameter value"}写回socket
+2022-08-26 17:35:49,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:36:24,266 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-26 17:36:24,272 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-26 17:36:24,312 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-26 17:36:30,989 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64725
+2022-08-26 17:36:30,994 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=64725,localport=8080]
+2022-08-26 17:36:30,995 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:36:30,996 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:36:30,996 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:36:30,997 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:36:31,001 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:36:31,083 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 186] - 开始初始化 https 发送对象
+2022-08-26 17:36:31,146 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-26 17:36:31,453 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-26 17:36:31,527 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-26 17:36:31,772 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-26 17:36:31,788 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 213] - 成功初始化 https 发送对象
+2022-08-26 17:36:31,995 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 66] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-26 17:36:32,008 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"{\"hhh\":3232}"}写回socket
+2022-08-26 17:36:32,009 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:37:03,321 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64737
+2022-08-26 17:37:03,322 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=64737,localport=8080]
+2022-08-26 17:37:03,322 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:37:03,322 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:37:03,323 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:37:03,323 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:37:03,323 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:37:54,970 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 66] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-26 17:37:54,971 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"{\"hhh\":3232}"}写回socket
+2022-08-26 17:37:54,971 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:38:22,236 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64758
+2022-08-26 17:38:22,237 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-4,socke 为Socket[addr=/127.0.0.1,port=64758,localport=8080]
+2022-08-26 17:38:22,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:38:22,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:38:22,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:38:22,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:38:22,237 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:38:54,266 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 66] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-26 17:42:10,060 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"{\"hhh\":3232}"}写回socket
+2022-08-26 17:42:10,061 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:42:59,624 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-26 17:42:59,629 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-26 17:42:59,665 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-26 17:43:12,730 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64879
+2022-08-26 17:43:12,734 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=64879,localport=8080]
+2022-08-26 17:43:12,734 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:43:12,735 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:43:12,735 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:43:12,736 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:43:12,755 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:43:12,829 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 186] - 开始初始化 https 发送对象
+2022-08-26 17:43:12,883 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-26 17:43:13,211 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-26 17:43:13,273 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-26 17:43:13,524 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-26 17:43:13,534 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 213] - 成功初始化 https 发送对象
+2022-08-26 17:43:15,959 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 66] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-26 17:43:15,976 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"{\"hhh\":3232}"}写回socket
+2022-08-26 17:43:15,976 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:44:26,807 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-26 17:44:26,817 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-26 17:44:26,867 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-26 17:44:42,779 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:64907
+2022-08-26 17:44:42,785 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 71] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=64907,localport=8080]
+2022-08-26 17:44:42,785 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...
+2022-08-26 17:44:42,786 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 收到消息，开始读数据
+2022-08-26 17:44:42,786 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 读入 socket 发送过来的数据成功{"name":vale}
+2022-08-26 17:44:42,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 79] - 开始发送 https
+2022-08-26 17:44:42,790 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com/wang，数据内容：{"name":vale}
+2022-08-26 17:44:42,854 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 186] - 开始初始化 https 发送对象
+2022-08-26 17:44:42,910 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-26 17:44:43,213 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-26 17:44:43,276 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-26 17:44:43,517 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-26 17:44:43,528 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 213] - 成功初始化 https 发送对象
+2022-08-26 17:44:43,625 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 66] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-26 17:45:20,207 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 82] - 将结果数据{"respCode":"000","respMsg":"{\"hhh\":3232}"}写回socket
+2022-08-26 17:45:20,208 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 74] - 阻塞 socket 准备读取数据...

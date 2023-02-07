@@ -1,0 +1,1484 @@
+2022-08-30 11:34:09,451 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-30 11:34:09,482 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-30 11:34:09,576 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-30 11:35:11,776 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:49816
+2022-08-30 11:35:11,792 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=49816,localport=8080]
+2022-08-30 11:35:11,792 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 11:35:11,833 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 11:35:11,833 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 11:35:11,833 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 11:35:11,833 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 11:35:12,005 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 11:35:12,020 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 187] - 开始初始化 https 发送对象
+2022-08-30 11:35:12,114 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-30 11:35:12,645 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-30 11:35:12,762 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-30 11:35:13,092 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-30 11:35:13,107 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 212] - 成功初始化 https 发送对象
+2022-08-30 11:35:13,326 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 11:35:13,326 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 11:35:13,326 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:42:06,262 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-30 14:42:06,262 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-30 14:42:06,324 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-30 14:42:17,957 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65033
+2022-08-30 14:42:17,957 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=65033,localport=8080]
+2022-08-30 14:42:17,957 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:42:17,957 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:42:17,957 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:42:17,972 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:42:17,972 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:42:18,113 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:42:18,113 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 187] - 开始初始化 https 发送对象
+2022-08-30 14:42:18,222 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-30 14:42:18,676 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-30 14:42:18,832 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-30 14:42:19,186 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-30 14:42:19,217 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 212] - 成功初始化 https 发送对象
+2022-08-30 14:42:19,499 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:42:19,499 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:42:19,499 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:42:53,316 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65046
+2022-08-30 14:42:53,332 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=65046,localport=8080]
+2022-08-30 14:42:53,348 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:42:53,348 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:42:53,348 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:42:53,348 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:42:53,348 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:42:53,348 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:42:53,363 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:42:53,363 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:42:53,363 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:25,588 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 24] - 开始启动 Java 桥接器
+2022-08-30 14:44:25,604 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-30 14:44:25,666 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-30 14:44:32,920 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65073
+2022-08-30 14:44:32,935 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=65073,localport=8080]
+2022-08-30 14:44:32,935 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:32,935 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:44:32,935 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:44:32,935 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:44:32,935 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:44:33,545 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:44:33,545 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 187] - 开始初始化 https 发送对象
+2022-08-30 14:44:33,795 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-30 14:44:34,445 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-30 14:44:34,523 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-30 14:44:34,883 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-30 14:44:34,902 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 212] - 成功初始化 https 发送对象
+2022-08-30 14:44:35,025 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:44:35,025 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:44:35,025 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:35,738 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:44:35,738 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:44:35,738 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:44:35,738 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:44:35,738 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:44:35,766 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:44:35,766 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:44:35,766 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:35,798 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:44:35,798 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:44:35,798 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:44:35,798 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:44:35,798 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:44:35,813 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:44:35,813 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:44:35,813 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:35,844 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:44:35,844 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:44:35,844 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:44:35,844 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:44:35,844 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:44:35,860 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:44:35,860 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:44:35,860 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:44:35,891 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:44:35,891 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:44:35,891 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:44:35,891 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:44:35,891 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:44:35,907 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:44:35,907 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:44:35,907 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:48,765 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65118
+2022-08-30 14:47:48,765 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=65118,localport=8080]
+2022-08-30 14:47:48,765 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:48,780 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:48,780 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:48,780 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:48,780 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:48,780 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:48,796 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:48,796 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:48,796 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:49,837 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:49,837 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:49,837 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:49,837 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:49,837 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:49,853 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:49,853 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:49,853 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:50,894 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:50,894 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:50,894 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:50,894 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:50,894 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:50,894 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:50,894 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:50,894 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:51,934 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:51,934 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:51,934 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:51,934 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:51,934 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:51,934 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:51,934 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:51,934 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:52,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:52,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:52,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:52,973 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:52,973 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:52,973 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:52,973 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:52,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65125
+2022-08-30 14:47:54,000 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-4,socke 为Socket[addr=/127.0.0.1,port=65125,localport=8080]
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:54,000 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:54,000 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:54,000 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:54,000 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:54,000 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:55,038 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:55,038 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:55,038 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:55,038 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:55,038 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:55,038 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:55,038 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:55,038 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:56,079 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:56,079 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:56,079 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:56,079 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:56,079 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:56,095 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:56,095 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:56,095 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:57,136 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:57,136 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:57,136 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:57,136 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:57,136 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:57,152 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:57,152 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:57,152 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:58,197 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:58,197 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:58,197 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:58,197 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:58,197 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:58,197 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:58,197 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:58,197 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:59,223 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65131
+2022-08-30 14:47:59,223 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-5,socke 为Socket[addr=/127.0.0.1,port=65131,localport=8080]
+2022-08-30 14:47:59,223 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:47:59,223 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:47:59,223 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:47:59,223 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:47:59,223 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:47:59,223 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:47:59,238 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:47:59,238 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:47:59,238 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:00,279 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:00,279 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:00,279 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:00,279 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:00,279 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:00,279 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:00,279 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:00,279 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:01,320 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:01,320 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:01,320 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:01,320 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:01,320 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:01,320 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:01,320 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:01,320 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:02,367 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:02,367 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:02,367 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:02,367 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:02,367 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:02,382 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:02,382 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:02,382 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:03,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:03,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:03,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:03,423 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:03,423 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:03,423 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:03,423 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:03,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:04,442 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65138
+2022-08-30 14:48:04,442 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-6,socke 为Socket[addr=/127.0.0.1,port=65138,localport=8080]
+2022-08-30 14:48:04,442 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:04,442 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:04,442 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:04,442 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:04,442 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:04,442 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:04,458 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:04,458 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:04,458 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:05,512 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:05,512 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:05,512 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:05,512 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:05,512 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:05,512 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:05,512 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:05,512 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:06,558 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:06,558 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:06,558 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:06,558 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:06,558 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:06,558 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:06,558 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:06,558 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:07,599 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:07,599 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:07,599 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:07,599 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:07,599 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:07,599 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:07,599 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:07,599 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:08,632 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:08,632 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:08,632 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:08,632 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:08,632 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:08,648 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:08,648 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:08,648 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:49,666 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65154
+2022-08-30 14:48:49,666 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-7,socke 为Socket[addr=/127.0.0.1,port=65154,localport=8080]
+2022-08-30 14:48:49,666 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:49,682 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:49,682 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:49,682 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:49,682 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:49,682 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:49,682 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:49,682 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:49,682 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:50,718 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:50,718 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:50,718 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:50,718 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:50,718 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:50,718 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:50,718 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:50,718 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:51,752 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:51,752 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:51,752 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:51,752 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:51,752 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:51,752 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:51,768 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:51,768 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:52,811 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:52,811 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:52,811 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:52,811 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:52,811 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:52,811 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:52,811 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:52,811 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:53,852 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:53,852 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:53,852 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:53,852 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:53,852 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:53,852 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:53,852 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:53,852 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65162
+2022-08-30 14:48:54,877 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-8,socke 为Socket[addr=/127.0.0.1,port=65162,localport=8080]
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:54,877 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:54,877 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:54,877 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:54,877 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:54,877 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:55,912 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:55,912 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:55,912 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:55,912 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:55,912 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:55,912 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:55,912 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:55,912 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:56,959 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:56,959 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:56,959 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:56,959 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:56,959 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:56,959 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:56,959 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:56,959 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:57,999 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:57,999 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:57,999 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:57,999 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:57,999 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:57,999 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:58,015 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:58,015 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:48:59,055 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:48:59,055 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:48:59,055 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:48:59,055 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:48:59,055 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:48:59,071 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:48:59,071 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:48:59,071 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:00,095 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65169
+2022-08-30 14:49:00,095 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-9,socke 为Socket[addr=/127.0.0.1,port=65169,localport=8080]
+2022-08-30 14:49:00,095 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:00,095 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:00,095 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:00,095 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:00,095 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:00,095 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:00,095 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:00,111 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:00,111 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:01,146 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:01,146 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:01,146 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:01,146 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:01,146 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:01,162 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:01,162 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:01,162 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:02,196 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:02,196 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:02,196 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:02,196 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:02,196 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:02,196 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:02,196 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:02,196 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:03,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:03,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:03,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:03,237 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:03,237 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:03,237 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:03,237 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:03,237 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:04,277 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:04,277 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:04,277 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:04,277 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:04,277 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:04,277 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:04,277 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:04,277 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:05,298 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65176
+2022-08-30 14:49:05,298 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-10,socke 为Socket[addr=/127.0.0.1,port=65176,localport=8080]
+2022-08-30 14:49:05,298 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:05,298 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:05,298 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:05,298 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:05,298 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:05,298 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:05,314 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:05,314 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:05,314 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:06,361 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:06,361 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:06,361 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:06,361 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:06,361 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:06,361 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:06,361 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:06,361 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:07,402 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:07,402 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:07,402 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:07,402 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:07,402 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:07,402 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:07,402 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:07,402 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:08,443 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:08,443 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:08,443 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:08,443 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:08,443 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:08,443 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:08,443 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:08,443 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:49:09,483 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:49:09,483 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:49:09,483 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:49:09,483 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:49:09,483 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:49:09,483 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:49:09,499 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:49:09,499 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,543 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65395
+2022-08-30 14:50:51,543 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65398
+2022-08-30 14:50:51,543 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-11,socke 为Socket[addr=/127.0.0.1,port=65395,localport=8080]
+2022-08-30 14:50:51,543 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,543 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65397
+2022-08-30 14:50:51,543 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-12,socke 为Socket[addr=/127.0.0.1,port=65398,localport=8080]
+2022-08-30 14:50:51,543 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,559 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:65396
+2022-08-30 14:50:51,559 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-13,socke 为Socket[addr=/127.0.0.1,port=65397,localport=8080]
+2022-08-30 14:50:51,559 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,559 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-14,socke 为Socket[addr=/127.0.0.1,port=65396,localport=8080]
+2022-08-30 14:50:51,559 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:51,574 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:51,574 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:51,574 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:51,574 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:51,574 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:51,574 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:51,574 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:51,574 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:51,574 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:51,574 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:52,615 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:52,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:52,615 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:52,615 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:52,615 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:52,615 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:52,615 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:52,631 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:52,631 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:52,631 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:52,631 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:52,631 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:52,631 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:52,646 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:52,646 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:52,646 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:52,646 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:52,646 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:52,646 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:53,670 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:53,670 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:53,670 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:53,670 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:53,670 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:53,686 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:53,686 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:53,686 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:53,686 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:53,686 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:53,686 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:53,686 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:53,686 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:53,702 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:53,702 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:53,702 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:53,702 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:53,702 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:53,702 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:54,723 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:54,723 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:54,723 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:54,723 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:54,723 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:54,739 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:54,739 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:54,739 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:54,739 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:54,739 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:54,739 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:54,739 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:54,739 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:54,739 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:54,754 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:54,754 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:54,754 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:54,754 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:54,754 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:54,754 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:55,779 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:55,779 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:55,779 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:55,779 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:55,779 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:55,780 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:55,780 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:55,780 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:55,780 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:55,780 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:55,789 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:55,789 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:55,789 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:55,804 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:55,804 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:55,804 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 14:50:55,804 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:55,804 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:55,804 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 14:50:55,804 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:55,804 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:55,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 14:50:55,820 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232}
+2022-08-30 14:50:55,820 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232}返回给 socket 客户端
+2022-08-30 14:50:55,820 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:58:26,256 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 24] - 开始启动 Java 桥接器
+2022-08-30 16:58:26,262 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-30 16:58:26,294 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-30 16:59:33,413 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55838
+2022-08-30 16:59:33,422 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55840
+2022-08-30 16:59:33,423 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55839
+2022-08-30 16:59:33,423 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:55841
+2022-08-30 16:59:33,423 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-2,socke 为Socket[addr=/127.0.0.1,port=55840,localport=8080]
+2022-08-30 16:59:33,423 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=55839,localport=8080]
+2022-08-30 16:59:33,422 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=55838,localport=8080]
+2022-08-30 16:59:33,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:33,423 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:33,423 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-4,socke 为Socket[addr=/127.0.0.1,port=55841,localport=8080]
+2022-08-30 16:59:33,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:33,448 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:33,448 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 16:59:33,448 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 16:59:33,448 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 16:59:33,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 16:59:33,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 16:59:33,451 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 16:59:33,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 16:59:33,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 16:59:33,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 16:59:33,451 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 16:59:33,451 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 16:59:33,451 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 16:59:33,458 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 16:59:33,458 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 16:59:33,458 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 16:59:33,458 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 16:59:33,575 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 16:59:33,575 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 16:59:33,575 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 16:59:33,575 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 16:59:33,578 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 187] - 开始初始化 https 发送对象
+2022-08-30 16:59:33,651 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-30 16:59:34,039 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-30 16:59:34,113 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-30 16:59:34,378 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-30 16:59:34,390 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 212] - 成功初始化 https 发送对象
+2022-08-30 16:59:34,595 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 16:59:34,595 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 16:59:34,595 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:34,602 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 16:59:34,603 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 16:59:34,603 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:34,615 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 16:59:34,615 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 16:59:34,615 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 16:59:34,627 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 16:59:34,627 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 16:59:34,628 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:05,627 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:05,628 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:05,628 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:05,629 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:05,629 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:05,642 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:05,642 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:05,643 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:05,644 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:05,644 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:05,651 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:05,652 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:05,652 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:05,655 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:05,655 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:05,656 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:05,657 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:05,657 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:05,657 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:05,657 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:05,658 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:05,672 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:05,673 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:05,673 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:05,673 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:05,674 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:05,682 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:05,682 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:05,682 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:05,700 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:05,700 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:05,700 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:36,692 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:36,692 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:36,692 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:36,693 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:36,693 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:36,700 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:36,701 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:36,701 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:36,703 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:36,704 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:36,704 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:36,724 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:36,724 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:36,724 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:36,724 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:36,725 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:36,740 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:00:36,740 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:00:36,740 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:00:36,740 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:00:36,740 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:36,740 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:00:36,740 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:36,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:00:36,755 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:00:36,755 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:00:36,755 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:07,741 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:07,741 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:07,741 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:07,742 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:07,742 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:07,749 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:07,749 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:07,749 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:07,751 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:07,751 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:07,751 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:07,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:07,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:07,788 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:07,788 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:07,788 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:07,802 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:07,802 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:07,802 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:07,802 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:07,802 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:07,804 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:07,804 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:07,804 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:07,807 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:07,807 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:07,807 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:38,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:38,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:38,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:38,787 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:38,788 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:38,788 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:38,788 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:38,788 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:38,788 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:38,788 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:38,796 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:38,796 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:38,797 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:38,799 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:38,799 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:38,799 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 17:01:38,850 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 17:01:38,850 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:38,850 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 17:01:38,850 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:38,850 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 17:01:38,867 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:38,876 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:38,876 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 17:01:38,878 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 发送 https 结束：返回数据内容：{"hhh":3232
+2022-08-30 17:01:38,878 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{"hhh":3232返回给 socket 客户端
+2022-08-30 17:01:38,878 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:07,231 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:63417
+2022-08-30 21:51:07,239 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:63416
+2022-08-30 21:51:07,239 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:63415
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 47] - 建立socket连接-----------/127.0.0.1:63414
+2022-08-30 21:51:07,243 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-7,socke 为Socket[addr=/127.0.0.1,port=63416,localport=8080]
+2022-08-30 21:51:07,243 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-6,socke 为Socket[addr=/127.0.0.1,port=63417,localport=8080]
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:07,243 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-8,socke 为Socket[addr=/127.0.0.1,port=63415,localport=8080]
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:07,243 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 73] - 当前线程名称为：Thread-9,socke 为Socket[addr=/127.0.0.1,port=63414,localport=8080]
+2022-08-30 21:51:07,243 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:07,285 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:07,285 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:07,285 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:07,285 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:07,285 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:07,285 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:09,331 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:09,331 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:09,331 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:09,331 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:09,335 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:09,335 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:09,335 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:09,335 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:09,343 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:09,343 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:09,343 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:09,343 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:09,343 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:09,343 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:09,343 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:09,343 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:09,343 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:09,343 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:09,343 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:09,343 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:10,372 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:10,372 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:10,372 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:10,372 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:10,372 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:10,372 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:12,392 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:12,392 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:12,392 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:12,392 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:12,392 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:12,392 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:12,392 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:12,392 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:12,392 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:12,392 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:12,392 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:12,392 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:12,392 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:13,424 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:13,424 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:13,424 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:13,424 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:13,424 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:15,453 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:15,453 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:15,453 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:15,453 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:15,453 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:15,453 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:15,453 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:15,453 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:15,453 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:15,453 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:15,453 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:15,453 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:15,453 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 78] - 收到消息，开始读数据
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 80] - 读入 socket 发送过来的数据成功，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:16,489 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 81] - 开始发送 https
+2022-08-30 21:51:16,489 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url为:https://www.comeonw.com/wang，数据内容为：{"test":wang}
+2022-08-30 21:51:16,489 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:16,489 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:16,489 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:16,489 INFO  com.hundsun.util.HttpUtil [HttpUtil.java : 59] - 请求头部内容为：Request{method=POST, url=https://www.comeonw.com/wang, headers=[X-DBS-ORG_ID:IECNCN, X-DBS-PROFILE:DEFAULT, X-DBS-CHANNEL_ID:]}
+2022-08-30 21:51:18,511 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:18,511 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:18,511 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:18,511 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:18,511 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:18,511 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:18,511 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:18,511 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:18,511 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:18,511 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:18,527 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:18,527 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 76] - 与请求地址进行进行连接https://www.comeonw.com/wang失败
+2022-08-30 21:51:18,527 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:18,527 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 77] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:61)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:167)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:82)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 more
+
+2022-08-30 21:51:18,527 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:18,527 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 171] - 发送 HTTPS 失败，错误信息:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}
+2022-08-30 21:51:18,527 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:18,527 INFO  com.hundsun.socket.DealSocket [DealSocket.java : 83] - 将数据:{连接至指定请求失败；可能错误原因：请求地址有误、网络问题等（详细可见桥接器日志）}返回给 socket 客户端
+2022-08-30 21:51:18,527 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...
+2022-08-30 21:51:18,527 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 76] - 阻塞 socket 准备读取数据...

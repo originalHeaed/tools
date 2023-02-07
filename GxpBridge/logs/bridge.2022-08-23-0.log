@@ -1,0 +1,1040 @@
+2022-08-23 10:01:18,612 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:01:18,622 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:01:18,631 ERROR com.hundsun.util.ConfigUtil [ConfigUtil.java : 150] - server.cert.type不支持当前类型JKS1
+2022-08-23 10:12:26,060 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:12:26,062 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:12:28,939 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 93] - 向url为{}发送 json 请求失败
+2022-08-23 10:12:28,940 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 94] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:86)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 17 more
+
+2022-08-23 10:13:23,828 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:13:23,830 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:13:24,622 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 93] - 向url为{}发送 json 请求失败
+2022-08-23 10:13:24,623 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 94] - javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:192)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:302)
+	at sun.security.ssl.Handshaker.fatalSE(Handshaker.java:296)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1514)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:86)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:124)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	... 26 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 32 more
+
+2022-08-23 10:20:37,391 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:20:37,393 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:20:38,261 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 90] - 向url为{}发送 json 请求失败
+2022-08-23 10:20:38,262 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 91] - java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.waitForClose(SSLSocketImpl.java:1769)
+	at sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:124)
+	at sun.security.ssl.Handshaker.sendChangeCipherSpec(Handshaker.java:1130)
+	at sun.security.ssl.ClientHandshaker.sendChangeCipherAndFinish(ClientHandshaker.java:1216)
+	at sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1128)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:348)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:83)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+
+2022-08-23 10:24:17,048 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:24:17,050 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:24:17,935 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 90] - 向url为{}发送 json 请求失败
+2022-08-23 10:24:17,936 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 91] - javax.net.ssl.SSLPeerUnverifiedException: Hostname www.comeonw.com not verified:
+    certificate: sha256/O/3cjcI+hlmfvK57us5uANfH2opTbFjGm0CXjOsyXqg=
+    DN: EMAILADDRESS=CA, CN=www.comeonw.com, OU=CA, O=CA, L=CA, ST=CA, C=CA
+    subjectAltNames: []
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:389)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:83)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+
+2022-08-23 10:27:23,728 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:27:23,732 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:27:44,474 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:27:44,477 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:46:10,769 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:46:10,772 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:46:14,073 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 90] - 向url为{}发送 json 请求失败
+2022-08-23 10:46:14,074 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 91] - java.net.ConnectException: Failed to connect to www.comeonw.com/127.0.0.1:443
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:83)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 17 more
+
+2022-08-23 10:57:22,914 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 10:57:22,916 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 10:57:23,900 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 91] - 向url为{}发送 json 请求失败
+2022-08-23 10:57:23,901 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 92] - java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.waitForClose(SSLSocketImpl.java:1769)
+	at sun.security.ssl.HandshakeOutStream.flush(HandshakeOutStream.java:124)
+	at sun.security.ssl.Handshaker.sendChangeCipherSpec(Handshaker.java:1130)
+	at sun.security.ssl.ClientHandshaker.sendChangeCipherAndFinish(ClientHandshaker.java:1216)
+	at sun.security.ssl.ClientHandshaker.serverHelloDone(ClientHandshaker.java:1128)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:348)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:80)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+
+2022-08-23 11:17:36,388 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 11:17:36,395 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 11:17:37,884 ERROR com.hundsun.dto.MyTrustManager [MyTrustManager.java : 96] - checkServerTrusted failed
+2022-08-23 13:49:44,121 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 13:49:44,126 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 13:49:45,565 ERROR com.hundsun.dto.MyTrustManager [MyTrustManager.java : 108] - 校验服务端数字证书失败，服务端证书不正确或不可信
+2022-08-23 13:49:45,567 ERROR com.hundsun.dto.MyTrustManager [MyTrustManager.java : 109] - sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.hundsun.dto.MyTrustManager.checkServerTrusted(MyTrustManager.java:105)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:66)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 34 more
+
+2022-08-23 13:49:45,578 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 84] - 向url为{}发送 json 请求失败
+2022-08-23 13:49:45,579 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 85] - javax.net.ssl.SSLException: com.hundsun.exception.MyRuntimeException: 认证服务端数字证书失败，服务端证书不正确或不可信
+	at sun.security.ssl.Alerts.getSSLException(Alerts.java:208)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1949)
+	at sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1906)
+	at sun.security.ssl.SSLSocketImpl.handleException(SSLSocketImpl.java:1889)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1410)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:66)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: com.hundsun.exception.MyRuntimeException: 认证服务端数字证书失败，服务端证书不正确或不可信
+	at com.hundsun.dto.MyTrustManager.checkServerTrusted(MyTrustManager.java:110)
+	at sun.security.ssl.AbstractTrustManagerWrapper.checkServerTrusted(SSLContextImpl.java:984)
+	at sun.security.ssl.ClientHandshaker.serverCertificate(ClientHandshaker.java:1496)
+	at sun.security.ssl.ClientHandshaker.processMessage(ClientHandshaker.java:216)
+	at sun.security.ssl.Handshaker.processLoop(Handshaker.java:1026)
+	at sun.security.ssl.Handshaker.process_record(Handshaker.java:961)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:1062)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	... 20 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:387)
+	at sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:292)
+	at sun.security.validator.Validator.validate(Validator.java:260)
+	at sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:324)
+	at sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:229)
+	at sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:105)
+	at com.hundsun.dto.MyTrustManager.checkServerTrusted(MyTrustManager.java:105)
+	... 28 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.security.cert.CertPathBuilder.build(CertPathBuilder.java:280)
+	at sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:382)
+	... 34 more
+
+2022-08-23 13:51:56,629 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 13:51:56,631 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 13:52:07,541 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 84] - 向url为{}发送 json 请求失败
+2022-08-23 13:52:07,543 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 85] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:66)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 19 more
+
+2022-08-23 14:21:35,051 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 14:21:35,053 DEBUG BridgeMain [BridgeMain.java : 34] - 加载并校验配置文件...
+2022-08-23 14:21:35,058 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 126] - 开始加载并且校验配置文件...
+2022-08-23 14:21:35,059 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 58] - 开始加载配置文件...
+2022-08-23 14:21:35,061 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 69] - 成功加载配置文件
+2022-08-23 14:21:35,061 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 163] - 成功加载并校验配置文件
+2022-08-23 14:21:35,066 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：hello
+2022-08-23 14:21:35,137 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 181] - 开始初始化 https 发送对象
+2022-08-23 14:21:35,194 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 14:21:35,536 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 14:21:35,590 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 101] - 成功加载客户端数字证书
+2022-08-23 14:21:35,597 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 14:21:35,602 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 71] - 成功加载服务端 CA 证书
+2022-08-23 14:21:35,850 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 14:21:35,861 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 208] - 成功初始化 https 发送对象
+2022-08-23 14:21:45,962 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 14:21:45,965 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:37)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 19 more
+
+2022-08-23 14:23:44,478 DEBUG BridgeMain [BridgeMain.java : 32] - 开始启动 Java 桥接器
+2022-08-23 14:23:44,486 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 58] - 开始加载配置文件...
+2022-08-23 14:23:44,488 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 69] - 成功加载配置文件
+2022-08-23 14:23:44,488 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 127] - 开始校验配置文件...
+2022-08-23 14:23:44,488 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 163] - 成功校验配置文件
+2022-08-23 14:23:44,491 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：hello
+2022-08-23 14:23:44,560 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 181] - 开始初始化 https 发送对象
+2022-08-23 14:23:44,618 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 14:23:44,945 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 14:23:45,008 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 101] - 成功加载客户端数字证书
+2022-08-23 14:23:45,012 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 14:23:45,016 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 71] - 成功加载服务端 CA 证书
+2022-08-23 14:23:45,285 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 14:23:45,302 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 208] - 成功初始化 https 发送对象
+2022-08-23 14:23:55,435 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 14:23:55,437 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.BridgeBootStrap.main(BridgeMain.java:36)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 19 more
+
+2022-08-23 17:09:33,552 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:09:33,559 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:09:33,586 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 76] - 成功加载配置文件
+2022-08-23 17:09:33,586 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 134] - 开始校验配置文件...
+2022-08-23 17:09:33,586 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 170] - 成功校验配置文件
+2022-08-23 17:10:47,252 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51146
+2022-08-23 17:10:47,293 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51146,localport=8080]
+2022-08-23 17:10:47,293 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:10:47,294 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:10:47,299 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:10:47,395 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:10:47,449 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:10:47,783 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:10:47,837 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 101] - 成功加载客户端数字证书
+2022-08-23 17:10:47,839 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:10:47,842 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 71] - 成功加载服务端 CA 证书
+2022-08-23 17:10:48,101 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:10:48,111 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:10:58,266 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:10:58,267 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:118)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 20 more
+
+2022-08-23 17:10:58,274 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"与银行端连接超时！"}写回 socket
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 145] - 将数据{"respCode":"与银行端连接超时！"}返回给 gxp 失败
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 146] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - 处理 gxp 请求异常
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 69] - java.lang.RuntimeException: 将数据{}返回给 gxp 失败
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:147)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	... 1 more
+
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 76] - 关闭 socket 失败
+2022-08-23 17:10:58,274 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 77] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:72)
+
+2022-08-23 17:15:32,716 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:15:32,720 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:15:32,747 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 76] - 成功加载配置文件
+2022-08-23 17:15:32,748 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 134] - 开始校验配置文件...
+2022-08-23 17:15:32,748 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 170] - 成功校验配置文件
+2022-08-23 17:15:41,122 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51180
+2022-08-23 17:15:41,126 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51180,localport=8080]
+2022-08-23 17:15:41,127 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:15:41,127 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:15:41,131 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:15:41,191 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:15:41,238 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:15:41,584 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:15:41,641 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:15:41,874 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:15:41,884 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:15:51,963 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:15:51,964 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:118)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 20 more
+
+2022-08-23 17:15:51,971 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"与银行端连接超时！"}写回 socket
+2022-08-23 17:15:51,971 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 145] - 将数据{"respCode":"与银行端连接超时！"}返回给 gxp 失败
+2022-08-23 17:15:51,971 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 146] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+
+2022-08-23 17:15:51,971 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - 处理 gxp 请求异常
+2022-08-23 17:15:51,971 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 69] - java.lang.RuntimeException: 将数据{}返回给 gxp 失败
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:147)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	... 1 more
+
+2022-08-23 17:15:51,972 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 76] - 关闭 socket 失败
+2022-08-23 17:15:51,972 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 77] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:72)
+
+2022-08-23 17:16:12,994 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51191
+2022-08-23 17:16:12,995 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=51191,localport=8080]
+2022-08-23 17:16:12,995 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:16:12,996 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:16:12,996 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:16:23,216 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:16:23,221 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:16:23,258 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 76] - 成功加载配置文件
+2022-08-23 17:16:23,258 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 134] - 开始校验配置文件...
+2022-08-23 17:16:23,258 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 170] - 成功校验配置文件
+2022-08-23 17:16:33,284 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51204
+2022-08-23 17:16:33,292 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51204,localport=8080]
+2022-08-23 17:16:33,292 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:16:33,293 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:16:33,302 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:16:33,378 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:16:33,439 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:16:33,774 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:16:33,831 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:16:34,105 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:16:34,118 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:16:47,785 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:16:50,271 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.performInitialHandshake(SSLSocketImpl.java:1375)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1403)
+	at sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:1387)
+	at okhttp3.internal.connection.RealConnection.connectTls(RealConnection.kt:379)
+	at okhttp3.internal.connection.RealConnection.establishProtocol(RealConnection.kt:337)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:209)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:118)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+
+2022-08-23 17:17:21,387 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"与银行端连接超时！"}写回 socket
+2022-08-23 17:17:21,387 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 145] - 将数据{"respCode":"与银行端连接超时！"}返回给 gxp 失败
+2022-08-23 17:17:21,387 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 146] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+
+2022-08-23 17:17:21,388 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - 处理 gxp 请求异常
+2022-08-23 17:17:21,388 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 69] - java.lang.RuntimeException: 将数据{}返回给 gxp 失败
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:147)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:139)
+	... 1 more
+
+2022-08-23 17:17:21,388 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 76] - 关闭 socket 失败
+2022-08-23 17:17:21,388 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 77] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getInputStream(Socket.java:903)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:72)
+
+2022-08-23 17:18:38,838 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:18:38,842 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:18:38,883 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 76] - 成功加载配置文件
+2022-08-23 17:18:38,884 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 134] - 开始校验配置文件...
+2022-08-23 17:18:38,884 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 170] - 成功校验配置文件
+2022-08-23 17:19:03,065 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51230
+2022-08-23 17:19:03,071 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51230,localport=8080]
+2022-08-23 17:19:03,072 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:19:03,073 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:19:03,082 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:19:03,154 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:19:03,213 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:19:03,554 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:19:03,623 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:19:03,871 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:19:03,880 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:19:17,958 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:19:17,961 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:120)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 20 more
+
+2022-08-23 17:19:17,969 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"107","respMsg":"与银行端连接超时！"}写回 socket
+2022-08-23 17:19:17,969 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 147] - 将数据{"respCode":"107","respMsg":"与银行端连接超时！"}返回给 gxp 失败
+2022-08-23 17:19:17,969 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 148] - java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:141)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+
+2022-08-23 17:19:17,969 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - 处理 gxp 请求异常
+2022-08-23 17:19:17,969 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 69] - java.lang.RuntimeException: 将数据{}返回给 gxp 失败
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:149)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+Caused by: java.net.SocketException: Socket is closed
+	at java.net.Socket.getOutputStream(Socket.java:943)
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:141)
+	... 1 more
+
+2022-08-23 17:20:54,575 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:20:54,582 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:20:54,622 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-23 17:21:06,968 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51255
+2022-08-23 17:21:06,972 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51255,localport=8080]
+2022-08-23 17:21:06,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:21:06,973 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:21:06,978 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:21:07,050 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:21:07,106 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:21:07,434 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:21:07,487 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:21:07,696 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:21:07,705 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:21:17,792 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:21:17,793 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:120)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 20 more
+
+2022-08-23 17:21:17,801 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"107","respMsg":"与银行端连接超时！"}写回 socket
+2022-08-23 17:23:45,490 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:23:45,496 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:23:45,531 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-23 17:23:51,310 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:51282
+2022-08-23 17:23:51,316 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=51282,localport=8080]
+2022-08-23 17:23:51,317 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 58] - 准备读入 socket 发送过来的数据...
+2022-08-23 17:23:51,319 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 60] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:23:51,326 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:23:51,389 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:23:51,454 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:23:51,811 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:23:51,875 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:23:52,137 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:23:52,147 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:24:02,463 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 67] - 与银行连接超时
+2022-08-23 17:24:02,465 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 68] - java.net.SocketTimeoutException: timeout
+	at okio.SocketAsyncTimeout.newTimeoutException(JvmOkio.kt:147)
+	at okio.AsyncTimeout.access$newTimeoutException(AsyncTimeout.kt:158)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:337)
+	at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:427)
+	at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:320)
+	at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+	at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:178)
+	at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:106)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:57)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:120)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:62)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.security.ssl.InputRecord.readFully(InputRecord.java:465)
+	at sun.security.ssl.InputRecord.read(InputRecord.java:503)
+	at sun.security.ssl.SSLSocketImpl.readRecord(SSLSocketImpl.java:973)
+	at sun.security.ssl.SSLSocketImpl.readDataRecord(SSLSocketImpl.java:930)
+	at sun.security.ssl.AppInputStream.read(AppInputStream.java:105)
+	at okio.InputStreamSource.read(JvmOkio.kt:94)
+	at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:125)
+	... 20 more
+
+2022-08-23 17:24:02,473 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 64] - 将结果数据{"respCode":"107","respMsg":"与银行端连接超时！"}写回 socket
+2022-08-23 17:24:02,473 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 153] - 客户端 socket 已经关闭，无法将数据{"respCode":"107","respMsg":"与银行端连接超时！"}写会客户端
+2022-08-23 17:24:02,473 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - 处理 gxp 请求异常
+2022-08-23 17:24:02,473 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 69] - java.lang.RuntimeException: 客户端 socket 已经关闭，无法将数据写会客户端
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:154)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:65)
+
+2022-08-23 17:32:45,034 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:32:45,039 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:32:45,077 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-23 17:40:23,789 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:40:23,794 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:40:23,833 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
+2022-08-23 17:40:42,167 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:61997
+2022-08-23 17:40:42,171 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-1,socke 为Socket[addr=/127.0.0.1,port=61997,localport=8080]
+2022-08-23 17:40:42,171 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 59] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:40:42,176 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:40:42,240 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 182] - 开始初始化 https 发送对象
+2022-08-23 17:40:42,304 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 58] - 开始初始化 SSL Socket Factory...
+2022-08-23 17:40:42,641 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 93] - 开始加载客户端数字证书 —— 用于发送给银行进行双向认证...
+2022-08-23 17:40:42,696 DEBUG com.hundsun.dto.MyTrustManager [MyTrustManager.java : 57] - 开始加载服务端 CA 证书 —— 用于校验服务端数字证书...
+2022-08-23 17:40:42,943 DEBUG com.hundsun.util.SSLSocketUtils [SSLSocketUtils.java : 68] - 成功初始化 SSL Socket Factory
+2022-08-23 17:40:42,955 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 209] - 成功初始化 https 发送对象
+2022-08-23 17:40:43,129 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 62] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-23 17:40:43,130 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 79] - 向url为{}发送 json 请求失败
+2022-08-23 17:40:43,130 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 80] - java.lang.IllegalStateException: closed
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:218)
+	at okhttp3.internal.Util.readBomAsCharset(Util.kt:265)
+	at okhttp3.ResponseBody.string(ResponseBody.kt:187)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:63)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:117)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:61)
+
+2022-08-23 17:40:43,138 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 63] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写回socket
+2022-08-23 17:40:43,138 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 149] - 客户端 socket 已经关闭，无法将数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写h回客户端
+2022-08-23 17:40:43,138 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:40:43,138 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 客户端 socket 已经关闭，无法将数据写会客户端
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:150)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:64)
+
+2022-08-23 17:43:51,448 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:62015
+2022-08-23 17:43:51,449 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-3,socke 为Socket[addr=/127.0.0.1,port=62015,localport=8080]
+2022-08-23 17:44:53,448 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 105] - 读入数据失败
+2022-08-23 17:44:53,449 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:44:53,449 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 从指定端口读入数据失败
+	at com.hundsun.socket.DealSocket.readJson(DealSocket.java:106)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:58)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.hundsun.socket.DealSocket.readJson(DealSocket.java:95)
+	... 1 more
+
+2022-08-23 17:44:54,902 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:62026
+2022-08-23 17:44:54,903 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-4,socke 为Socket[addr=/127.0.0.1,port=62026,localport=8080]
+2022-08-23 17:45:46,775 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 105] - 读入数据失败
+2022-08-23 17:45:46,775 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:45:46,775 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 从指定端口读入数据失败
+	at com.hundsun.socket.DealSocket.readJson(DealSocket.java:106)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:58)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:178)
+	at java.io.InputStreamReader.read(InputStreamReader.java:184)
+	at java.io.BufferedReader.fill(BufferedReader.java:161)
+	at java.io.BufferedReader.read(BufferedReader.java:182)
+	at com.hundsun.socket.DealSocket.readJson(DealSocket.java:95)
+	... 1 more
+
+2022-08-23 17:45:49,128 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:62037
+2022-08-23 17:45:49,129 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-5,socke 为Socket[addr=/127.0.0.1,port=62037,localport=8080]
+2022-08-23 17:45:49,130 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 59] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:45:49,130 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:45:49,139 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 62] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-23 17:45:49,139 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 79] - 向url为{}发送 json 请求失败
+2022-08-23 17:45:49,139 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 80] - java.lang.IllegalStateException: closed
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:218)
+	at okhttp3.internal.Util.readBomAsCharset(Util.kt:265)
+	at okhttp3.ResponseBody.string(ResponseBody.kt:187)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:63)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:117)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:61)
+
+2022-08-23 17:45:49,139 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 63] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写回socket
+2022-08-23 17:45:49,139 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 149] - 客户端 socket 已经关闭，无法将数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写h回客户端
+2022-08-23 17:45:49,139 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:45:49,139 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 客户端 socket 已经关闭，无法将数据写会客户端
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:150)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:64)
+
+2022-08-23 17:47:26,245 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:62056
+2022-08-23 17:47:26,246 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-6,socke 为Socket[addr=/127.0.0.1,port=62056,localport=8080]
+2022-08-23 17:47:26,246 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 59] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:47:26,246 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:47:26,345 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 62] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-23 17:47:26,346 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 79] - 向url为{}发送 json 请求失败
+2022-08-23 17:47:26,346 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 80] - java.lang.IllegalStateException: closed
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:218)
+	at okhttp3.internal.Util.readBomAsCharset(Util.kt:265)
+	at okhttp3.ResponseBody.string(ResponseBody.kt:187)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:63)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:117)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:61)
+
+2022-08-23 17:47:26,346 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 63] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写回socket
+2022-08-23 17:47:26,346 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 149] - 客户端 socket 已经关闭，无法将数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写h回客户端
+2022-08-23 17:47:26,346 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:47:26,346 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 客户端 socket 已经关闭，无法将数据写会客户端
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:150)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:64)
+
+2022-08-23 17:49:27,763 DEBUG com.hundsun.socket.MainSocket [MainSocket.java : 52] - 建立socket连接-----------/127.0.0.1:62071
+2022-08-23 17:49:27,764 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 55] - 当前线程名称为：Thread-7,socke 为Socket[addr=/127.0.0.1,port=62071,localport=8080]
+2022-08-23 17:49:27,764 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 59] - 读入 socket 发送过来的数据成功，内容:{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:49:27,764 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 48] - 发送 https 请求开始：url:https://www.comeonw.com，数据内容：{anama{nj{}ds}kjskdj{}sdksd}
+2022-08-23 17:49:27,774 DEBUG com.hundsun.util.HttpUtil [HttpUtil.java : 62] - 发送 https 结束：返回数据内容：qw12121212
+2022-08-23 17:49:27,774 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 79] - 向url为{}发送 json 请求失败
+2022-08-23 17:49:27,774 ERROR com.hundsun.util.HttpUtil [HttpUtil.java : 80] - java.lang.IllegalStateException: closed
+	at okio.RealBufferedSource.select(RealBufferedSource.kt:218)
+	at okhttp3.internal.Util.readBomAsCharset(Util.kt:265)
+	at okhttp3.ResponseBody.string(ResponseBody.kt:187)
+	at com.hundsun.util.HttpUtil.httpsPost(HttpUtil.java:63)
+	at com.hundsun.socket.DealSocket.sendHttpsAndGetRes(DealSocket.java:117)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:61)
+
+2022-08-23 17:49:27,774 DEBUG com.hundsun.socket.DealSocket [DealSocket.java : 63] - 将结果数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写回socket
+2022-08-23 17:49:27,774 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 149] - 客户端 socket 已经关闭，无法将数据{"respCode":"103","respMsg":"发送 json 请求失败，原因：closed"}写h回客户端
+2022-08-23 17:49:27,774 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 67] - 处理 gxp 请求异常
+2022-08-23 17:49:27,775 ERROR com.hundsun.socket.DealSocket [DealSocket.java : 68] - java.lang.RuntimeException: 客户端 socket 已经关闭，无法将数据写会客户端
+	at com.hundsun.socket.DealSocket.writeJson(DealSocket.java:150)
+	at com.hundsun.socket.DealSocket.run(DealSocket.java:64)
+
+2022-08-23 17:49:38,032 DEBUG com.hundsun.BridgeBootStrap [BridgeBootStrap.java : 25] - 开始启动 Java 桥接器
+2022-08-23 17:49:38,037 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 65] - 开始加载配置文件...
+2022-08-23 17:49:38,075 DEBUG com.hundsun.util.ConfigUtil [ConfigUtil.java : 133] - 开始校验配置文件...
