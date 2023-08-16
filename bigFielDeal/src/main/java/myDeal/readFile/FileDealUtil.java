@@ -59,9 +59,5 @@ public class FileDealUtil {
         Instant end = Instant.now();
         int i = end.getNano() - begin.getNano();
         System.out.println("耗费时间（纳秒）：" + i);
-
     }
-
-
-
 }
