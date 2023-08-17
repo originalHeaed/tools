@@ -15,7 +15,7 @@ public class ThreadUtil {
 
     private ThreadUtil(int segement) {
         this.segement = segement;
-        threadPoolExecutor = new ThreadPoolExecutor(0, segement, 30, TimeUnit.SECONDS, new SynchronousQueue<>());
+//        threadPoolExecutor = Executors.newCachedThreadPool(this.segement);
     }
 
     public static ThreadUtil getThreadUtil(int segement) {
@@ -28,5 +28,12 @@ public class ThreadUtil {
      */
     public void addTask(Runnable runnable) {
         threadPoolExecutor.execute(runnable);
+    }
+
+    /**
+     * 关闭线程池
+     */
+    public void close() {
+        threadPoolExecutor.shutdown();
     }
 }

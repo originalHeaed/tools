@@ -24,7 +24,7 @@ public class FileReadUtil {
 
     private FileReadUtil(String path, int max) throws FileNotFoundException {
         reader = new FileReader(path);
-        bufferedReader = new BufferedReader(bufferedReader, 1);
+        bufferedReader = new BufferedReader(reader, 1);
         MAX = max;
     }
 
