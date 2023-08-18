@@ -18,7 +18,11 @@ public class FileReadUtil {
      */
     private int MAX;
 
-    private FileReader reader;
+    /**
+     * 文件路径
+     */
+    private String path;
+
     private BufferedReader bufferedReader;
 
     private FileReadUtil(String path) throws FileNotFoundException {
@@ -26,9 +30,8 @@ public class FileReadUtil {
     }
 
     private FileReadUtil(String path, int max) throws FileNotFoundException {
-        reader = new FileReader(path);
-        bufferedReader = new BufferedReader(reader, 1);
         MAX = max;
+        this.path = path;
     }
 
     /**
@@ -48,7 +51,8 @@ public class FileReadUtil {
     /**
      * 从文件中读取指定条数的记录
      */
-    public List<String> readData() throws IOException {
+    public List<String> readDataByNormal() throws IOException {
+        if (bufferedReader == null) bufferedReader = new BufferedReader(new FileReader(path));
         List<String> list = new LinkedList<>();
         String line = "";
         while (list.size() < MAX && (line = bufferedReader.readLine()) != null) {
@@ -62,7 +66,6 @@ public class FileReadUtil {
      */
     public void close() {
         try {
-            if (reader != null) reader.close();
             if (bufferedReader != null) bufferedReader.close();
         } catch (Exception e) {
         }

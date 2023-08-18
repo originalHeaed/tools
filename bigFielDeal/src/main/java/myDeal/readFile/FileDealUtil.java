@@ -73,13 +73,13 @@ public class FileDealUtil {
     }
 
     /**
-     * 传入每行数据的处理规则，然后开始多线程处理文件内容
+     * 传入每行数据的处理规则，然后开始多线程处理文件内容（使用普通的方式读取文件）
      */
-    public void dealFile(Consumer<List<String>> consumer) {
+    public void dealFileByNormal(Consumer<List<String>> consumer) {
         /* 读文件并将内容加入到线程池中执行，如果线程池满了会阻塞等待 */
         try {
             List<String> list;
-            while ((list = fileReadUtil.readData()).size() > 0) {
+            while ((list = fileReadUtil.readDataByNormal()).size() > 0) {
                 List<String> tasklist = list;
                 if (tasklist.size() > 0) threadUtil.addTask(() -> consumer.accept(tasklist));
             }

@@ -27,7 +27,6 @@ public class ThreadUtil {
         threadPoolExecutor = new ThreadPoolExecutor(this.segement, this.segement, 60, TimeUnit.SECONDS, new ArrayBlockingQueue<>(1, true), (r, executor) -> {
             try {
                 if (!executor.isShutdown()) {
-                    System.out.println("线程池中所有核心线程已经处于工作状态，将等待下一个核心线程处理任务完成才继续处理，阻塞的线程为：" + Thread.currentThread());
                     executor.getQueue().put(r);
                 }
             } catch (InterruptedException e) {
