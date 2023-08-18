@@ -13,6 +13,9 @@ public class FileReadUtil {
      */
     private static final int DEF_MAX = 50;
 
+    /**
+     * 每次 readDate 最大读取行数
+     */
     private int MAX;
 
     private FileReader reader;
