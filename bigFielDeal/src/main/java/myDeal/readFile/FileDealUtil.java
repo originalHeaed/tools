@@ -1,6 +1,7 @@
 package myDeal.readFile;
 
 import java.time.Instant;
+import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -58,11 +59,23 @@ public class FileDealUtil {
     }
 
     /**
+     * 创建文件处理对象，指定每个线程处理的文件量
+     */
+    public static FileDealUtil getInstanceLineNum(String filePath, int dealLineNum) {
+        return new FileDealUtil(filePath, DEF_SEGEMENT, dealLineNum);
+    }
+
+    /**
+     * 创建文件处理对象，指定每个线程处理的文件量以及线程数
+     */
+    public static FileDealUtil getInstance(String filePath, int segement, int dealLineNum) {
+        return new FileDealUtil(filePath, segement, dealLineNum);
+    }
+
+    /**
      * 传入每行数据的处理规则，然后开始多线程处理文件内容
      */
     public void dealFile(Consumer<List<String>> consumer) {
-        /* 获取执行前的时间戳 */
-        Instant begin = Instant.now();
         /* 读文件并将内容加入到线程池中执行，如果线程池满了会阻塞等待 */
         try {
             List<String> list;
@@ -76,9 +89,5 @@ public class FileDealUtil {
             threadUtil.close();
             fileReadUtil.close();
         }
-        /* 获取执行之后的时间戳 */
-        Instant end = Instant.now();
-        int i = end.getNano() - begin.getNano();
-        System.out.println("耗费时间（纳秒）：" + i);
     }
 }

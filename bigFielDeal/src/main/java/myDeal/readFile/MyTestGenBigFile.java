@@ -13,10 +13,11 @@ public class MyTestGenBigFile {
         }
         BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
         /* 生成一个大文件 */
-        for (int i = 0; i < 1000000000; i++) {
+        for (int i = 0; i < 500000000; i++) {
             bufferedWriter.write("121212112");
             bufferedWriter.newLine();
         }
         bufferedWriter.close();
+        System.out.println("累计写入：" + 1000000000 + "行记录");
     }
 }
