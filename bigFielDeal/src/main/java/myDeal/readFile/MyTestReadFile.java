@@ -5,10 +5,11 @@ import com.google.common.io.Files;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.LineIterator;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Paths;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.List;
@@ -46,13 +47,18 @@ public class MyTestReadFile {
         }
     }
 
-    public static void main(String[] args) {
-        Instant now = Instant.now();
-        long i = 0;
-        while (i < 3000000000l) {
-            i++;
-        }
-        Instant now2 = Instant.now();
-        System.out.println(Duration.between(now, now2).getSeconds());
+    public static void main(String[] args) throws IOException {
+        FileChannel channel = FileChannel.open(Paths.get("D:\\test4.txt"));
+        byte[] base = new byte["3".getBytes(StandardCharsets.UTF_8).length];
+        ByteBuffer byteBuffer = ByteBuffer.allocate("3".getBytes(StandardCharsets.UTF_8).length * 3);
+        channel.read(byteBuffer);
+        byteBuffer.flip();
+        byteBuffer.get(base);
+        System.out.println(new String(base, StandardCharsets.UTF_8));
+        channel.read(byteBuffer);
+        byteBuffer.get(base);
+        System.out.println(new String(base, StandardCharsets.UTF_8));
+        channel.close();
+        byteBuffer.clear();
     }
 }
