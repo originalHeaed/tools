@@ -1,6 +1,11 @@
 package myDeal.readFile;
 
 import java.io.*;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Paths;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,22 +18,59 @@ public class FileReadUtil {
      */
     private static final int DEF_MAX = 50;
 
+    private static final Charset DEF_CHARSETS = StandardCharsets.UTF_8;
+
     /**
      * 每次 readDate 最大读取行数
      */
     private int MAX;
 
-    private FileReader reader;
+    /**
+     * 文件路径
+     */
+    private String path;
+
+    /**
+     * 读取文件的字符编码
+     */
+    private Charset charsets;
+
+    /**
+     * 每个字符对应的字节数
+     */
+    private int baseLength;
+
+    /**
+     * 使用 BIO 对文件进行处理的流对象
+     */
     private BufferedReader bufferedReader;
+
+
+    /**
+     * 使用 NIO 对文件进行处理的对象
+     */
+    private FileChannel channel;
+
+    private ByteBuffer byteBuffer;
 
     private FileReadUtil(String path) throws FileNotFoundException {
         this(path, DEF_MAX);
     }
 
-    private FileReadUtil(String path, int max) throws FileNotFoundException {
-        reader = new FileReader(path);
-        bufferedReader = new BufferedReader(reader, 1);
+    private FileReadUtil(String path, int max) {
+        this(path, max, DEF_CHARSETS);
+    }
+
+    private FileReadUtil(String path, Charset charsets) {
+        this(path, DEF_MAX, charsets);
+    }
+
+
+    private FileReadUtil(String path, int max, Charset charsets) {
         MAX = max;
+        this.path = path;
+        this.charsets = charsets;
+        this.baseLength = "t".getBytes(charsets).length;
     }
 
     /**
@@ -46,9 +88,10 @@ public class FileReadUtil {
     }
 
     /**
-     * 从文件中读取指定条数的记录
+     * 通过 BIO 从文件中获取内容
      */
-    public List<String> readData() throws IOException {
+    public List<String> readDataByNormal() throws IOException {
+        if (bufferedReader == null) bufferedReader = new BufferedReader(new InputStreamReader(new FileInputStream(path), charsets));
         List<String> list = new LinkedList<>();
         String line = "";
         while (list.size() < MAX && (line = bufferedReader.readLine()) != null) {
@@ -58,11 +101,28 @@ public class FileReadUtil {
     }
 
     /**
+     * 通过 NIO 从文件中获取内容
+     * @return
+     * @throws IOException
+     */
+    public List<String> readDataByNIO() throws IOException {
+        if (channel != null) {
+            channel = FileChannel.open(Paths.get(path));
+            byteBuffer = ByteBuffer.allocate(1024 * baseLength); // 读入 1024 个字符
+            channel.read(byteBuffer);
+        }
+        List<String> res = new LinkedList<>();
+        while (res.size() < MAX && byteBuffer.hasRemaining()) {
+
+        }
+        return res;
+    }
+
+    /**
      * 关闭文件流
      */
     public void close() {
         try {
-            if (reader != null) reader.close();
             if (bufferedReader != null) bufferedReader.close();
         } catch (Exception e) {
         }
