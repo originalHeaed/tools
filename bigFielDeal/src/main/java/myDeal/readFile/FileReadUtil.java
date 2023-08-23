@@ -125,6 +125,8 @@ public class FileReadUtil {
     public void close() {
         try {
             if (bufferedReader != null) bufferedReader.close();
+            if (channel != null) channel.close();
+            if (byteBuffer != null) byteBuffer.clear();
         } catch (Exception e) {
         }
     }
