@@ -102,8 +102,9 @@ public class FileReadUtil {
 
     /**
      * 通过 NIO 从文件中获取内容
-     * @return
-     * @throws IOException
+     * 暂时不使用 NIO 的方式读取文件，使用 NIO 的方式主要优势在需要处理多个文件，
+     * 提高多个文件同时读取的能力，不适合大文件读取，因为如果存在多个大文件采用 NIO 的方式读取
+     * 容易导致 OOM
      */
     public List<String> readDataByNIO() throws IOException {
         if (channel != null) {
