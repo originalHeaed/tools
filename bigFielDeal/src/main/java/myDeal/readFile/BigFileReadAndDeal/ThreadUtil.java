@@ -1,7 +1,6 @@
-package myDeal.readFile;
+package myDeal.readFile.BigFileReadAndDeal;
 
 import java.util.concurrent.*;
-import java.util.function.Consumer;
 
 /**
  * 线程处理类，用来创建一个无核心线程的线程池

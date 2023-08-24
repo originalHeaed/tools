@@ -1,4 +1,4 @@
-package myDeal.readFile;
+package myDeal.readFile.BigFileReadAndDeal;
 
 import java.io.*;
 import java.nio.ByteBuffer;

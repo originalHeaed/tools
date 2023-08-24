@@ -1,4 +1,4 @@
-package myDeal.readFile;
+package myDeal.readFile.BigFileReadAndDeal;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MyTestDealBigFile {
+public class MyTestDealBigFileMain {
 
     public static final int BATCH_NUM = 5000000;
 

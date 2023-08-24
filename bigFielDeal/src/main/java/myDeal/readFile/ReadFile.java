@@ -15,7 +15,10 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.List;
 
-public class MyTestReadFile {
+/**
+ * 正常文件的读取
+ */
+public class ReadFile {
     /**
      * 使用 guava 读取文件
      * @throws IOException

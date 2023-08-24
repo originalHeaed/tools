@@ -1,7 +1,5 @@
-package myDeal.readFile;
+package myDeal.readFile.BigFileReadAndDeal;
 
-import java.time.Instant;
-import java.time.temporal.ChronoField;
 import java.util.List;
 import java.util.function.Consumer;
 
