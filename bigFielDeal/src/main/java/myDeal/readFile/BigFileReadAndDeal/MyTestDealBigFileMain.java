@@ -68,7 +68,7 @@ public class MyTestDealBigFileMain {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("常规处理异常11", e);
+            throw new RuntimeException("常规处理异常", e);
         }
         Instant end3 = Instant.now();
         long i3 = Duration.between(begin3, end3).getSeconds();
