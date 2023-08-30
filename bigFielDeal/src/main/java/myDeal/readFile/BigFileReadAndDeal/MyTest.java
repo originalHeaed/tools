@@ -6,7 +6,7 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class MyTestDealBigFileMain {
+public class MyTest {
 
     public static final int BATCH_NUM = 5000000;
 
@@ -33,6 +33,7 @@ public class MyTestDealBigFileMain {
      *  普通方法：总耗时 122s
      *
      *  总结：内存占用基本都没啥大问题，每行记录等待资源时间占高建议使用线程池，占比低建议使用正常模式（减少线程之间的切换，反而还提高了效率）
+     *  另外大文件的处理如果处理速度过快，读取速度过慢就会导致瓶颈在文件读取中，可以使用 JAVA NIO 内存映射方式读取文件或者将 BufferRead 的缓冲区适当扩大减少 IO 次数
      */
     public static void dealBigFileByNormal() {
         /* 多线程处理文件 */
